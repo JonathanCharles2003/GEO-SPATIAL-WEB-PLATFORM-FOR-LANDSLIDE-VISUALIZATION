@@ -74,7 +74,7 @@ function initializeMap() {
         });
 
     // Load GeoJSON layer but don't add to map immediately
-    fetch("../data/foothills.geojson")
+    fetch("/js/foothills.geojson")
         .then((response) => response.json())
         .then((geojsonData) => {
             geojsonLayer = L.geoJSON(geojsonData, {
