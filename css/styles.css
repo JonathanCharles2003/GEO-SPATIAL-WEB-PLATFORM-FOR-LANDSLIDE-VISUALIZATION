@@ -79,3 +79,50 @@ button {
 button:hover {
     background-color: #0056b3; /* Darker shade on hover */
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.section h2 {
+    background-color: #f1f1f1;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.section h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer button {
+    padding: 5px 10px;
+    margin: 5px;
+}
