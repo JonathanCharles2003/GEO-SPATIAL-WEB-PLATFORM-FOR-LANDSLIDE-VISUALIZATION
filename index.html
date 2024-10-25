@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Toggle Example</title>
+
+    <!-- Leaflet CDN link -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home">
+        <div class="content">
+            <h1>DEVELOPMENT OF AN INTEGRATED AND INTERACTIVE GEO-SPATIAL WEB PLATFORM FOR LANDSLIDE VISUALIZATION AND PREDICTION</h1>
+            <p class="description">
+                The project "Development of an Integrated and Interactive Geo-Spatial Web Platform for Landslide Visualization and Prediction" aims to create a dynamic web-based solution for analyzing and predicting landslides using geospatial data. Utilizing HTML, CSS, and JavaScript along with the Leaflet library, the platform visually represents geospatial maps. GeoJSON files are employed to depict shape and boundary information, while GeoTIFF files display raster images, providing rich visual context. The platform incorporates interactive features such as checkboxes, allowing users to toggle between different types of GeoTIFF and GeoJSON files based on parameters like year, color, and other criteria. This flexibility enables the user to explore and compare geospatial data across various timeframes and conditions. Ultimately, the system integrates prediction functionality, supporting informed decision-making by forecasting landslide occurrences based on historical data and geospatial patterns. The platform is designed to enhance the visualization, analysis, and understanding of landslide risks in specific regions.
+            </p>
+            <p>Click the button below to view the map.</p>
+            <button id="viewMapButton">View Map</button>
+        </div>
+    </div>
+    
+
+    <!-- Map Page -->
+    <div id="mapPage" style="display: none;">
+        <button id="toggleControlsButton">Toggle Controls</button>
+        <div id="controls" style="display: none; margin-top: 10px;">
+            <input type="checkbox" id="toggleOSM" checked />
+            Toggle OpenStreetMap<br>
+            <input type="checkbox" id="toggleOptenTopo" />
+            Toggle OptenTopo Map<br>
+            <input type="checkbox" id="toggleEsri_WorldImagery"/>
+            Toggle Esri_WorldImagery map<br>
+            <input type="checkbox" id="toggleNASAGIBS_ModisTerraTrueColorCR"/>
+            Toggle NASAGIBS_ModisTerraTrueColorCR map<br>
+            <input type="checkbox" id="toggleGeoJSON" checked />
+            Toggle GeoTIFF and GeoJSON
+        </div>
+        <div id="map"></div>
+        <button id="backToHomeButton">Back to Home</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/georaster"></script>
+    <script src="https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js"></script>
+    <script src="https://unpkg.com/geoblaze"></script>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#map {
+    height: 90vh;
+    width: 100%;
+}
+#controls {
+    padding: 10px;
+}
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#mapPage {
+    display: none; /* Initially hidden */
+}
+button {
+    padding: 10px 15px; /* Reduced padding for smaller size */
+    font-size: 14px; /* Reduced font size */
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Spacing between buttons */
+}
+
+/* Styles for the Back to Home button */
+#backToHomeButton {
+    position: absolute; /* Positioning relative to the map */
+    top: 1px; /* Distance from the top */
+    right: 10px; /* Distance from the left */
+    z-index: 1000; /* Ensure the button is above other elements */
+}
+
+#home {
+    background-color: #f4f4f4; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center align */
+    text-align: center; /* Center align text */
+}
+
+h1 {
+    font-size: 2.5em; /* Large font size for title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1em; /* Slightly larger font for readability */
+    color: #555; /* Darker gray for description text */
+    line-height: 1.6; /* Improved line spacing */
+    margin-bottom: 20px; /* Space below the description */
+}
+
+button {
+    background-color: #007BFF; /* Primary color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around text */
+    font-size: 1em; /* Button font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
