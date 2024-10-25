@@ -74,7 +74,7 @@ function initializeMap() {
         });
 
     // Load GeoJSON layer but don't add to map immediately
-    fetch("/js/foothills.geojson")
+    fetch("https://jonathancharles2003.github.io/GEO-SPATIAL-WEB-PLATFORM-FOR-LANDSLIDE-VISUALIZATION/js/foothills.geojson")
         .then((response) => response.json())
         .then((geojsonData) => {
             geojsonLayer = L.geoJSON(geojsonData, {
